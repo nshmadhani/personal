@@ -33,26 +33,20 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			text: 'Timeline',
 			href: '/timeline',
 		},
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:link',
-			text: 'Referrals',
-			href: '/referrals',
-		},
 	],
 	[
 		{
 			type: NavigationItemType.LINK,
 			icon: 'feather:twitter',
 			text: 'Twitter',
-			href: 'https://twitter.com/nurodev',
+			href: 'https://twitter.com/thedesidegen',
 			external: true,
 		},
 		{
 			type: NavigationItemType.LINK,
 			icon: 'feather:github',
 			text: 'GitHub',
-			href: 'https://github.com/nurodev',
+			href: 'https://github.com/nshmadhani',
 			external: true,
 		},
 	],
@@ -110,27 +104,27 @@ export function useNavigation(): {
 			{
 				type: NavigationItemType.DIVIDER,
 			},
-			{
-				type: NavigationItemType.ACTION,
-				icon: 'feather:monitor',
-				endIcon: theme === Theme.SYSTEM ? 'feather:check-circle' : undefined,
-				text: 'System Theme',
-				onClick: () => setTheme(Theme.SYSTEM),
-			},
-			{
-				type: NavigationItemType.ACTION,
-				icon: 'feather:sun',
-				endIcon: theme === Theme.LIGHT ? 'feather:check-circle' : undefined,
-				text: 'Light Theme',
-				onClick: () => setTheme(Theme.LIGHT),
-			},
-			{
-				type: NavigationItemType.ACTION,
-				icon: 'feather:moon',
-				endIcon: theme === Theme.DARK ? 'feather:check-circle' : undefined,
-				text: 'Dark Theme',
-				onClick: () => setTheme(Theme.DARK),
-			},
+			// {
+			// 	type: NavigationItemType.ACTION,
+			// 	icon: 'feather:monitor',
+			// 	endIcon: theme === Theme.SYSTEM ? 'feather:check-circle' : undefined,
+			// 	text: 'System Theme',
+			// 	onClick: () => setTheme(Theme.SYSTEM),
+			// },
+			// {
+			// 	type: NavigationItemType.ACTION,
+			// 	icon: 'feather:sun',
+			// 	endIcon: theme === Theme.LIGHT ? 'feather:check-circle' : undefined,
+			// 	text: 'Light Theme',
+			// 	onClick: () => setTheme(Theme.LIGHT),
+			// },
+			// {
+			// 	type: NavigationItemType.ACTION,
+			// 	icon: 'feather:moon',
+			// 	endIcon: theme === Theme.DARK ? 'feather:check-circle' : undefined,
+			// 	text: 'Dark Theme',
+			// 	onClick: () => setTheme(Theme.DARK),
+			// },
 		],
 	];
 
