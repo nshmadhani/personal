@@ -1,7 +1,7 @@
 import matter from 'gray-matter';
 import { format } from 'date-fns';
 import { join } from 'path';
-import { readdirSync, readFileSync } from 'fs';
+import { readdirSync, readFileSync, existsSync } from 'fs';
 import { serialize } from 'next-mdx-remote/serialize';
 
 import RehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -18,6 +18,7 @@ const BLOG_POSTS_DIR = join(process.cwd(), 'src', 'data', 'blog');
  * Get the slugs of all available blog posts
  */
 export async function getAllPostSlugs(): Promise<Array<string>> {
+	if (!existsSync(BLOG_POSTS_DIR)) return [];
 	return readdirSync(BLOG_POSTS_DIR);
 }
 
@@ -25,6 +26,7 @@ export async function getAllPostSlugs(): Promise<Array<string>> {
  * Get the frontmatter metadata for all available blog posts
  */
 export async function getAllPostsFrontMatter(): Promise<Array<FrontMatter>> {
+	if (!existsSync(BLOG_POSTS_DIR)) return [];
 	const files = readdirSync(BLOG_POSTS_DIR);
 
 	return files
