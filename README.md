@@ -1,6 +1,6 @@
 <div align="center">
 
-<a target="_blank" href="https://nuro.dev">
+<a target="_blank" href="https://nshmadhani.com">
     <img alt='Website' src="./public/blog/hello_world/screenshot.png" />
 </a>
 
@@ -16,7 +16,7 @@
 Clone the repository
 
 ```zsh
-git clone https://github.com/nurodev/nuro.dev.git
+git clone https://github.com/nshmadhani/personal.git
 ```
 
 Install dependencies
@@ -51,4 +51,4 @@ yarn build
 
 ## 📄 License
 
-MIT © [Ben Dixon](https://github.com/nurodev/nuro.dev/blob/main/LICENSE)
+MIT

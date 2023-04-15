@@ -1,10 +1,10 @@
 {
 	"private": true,
-	"name": "nuro.dev",
+	"name": "nshmadhani.com",
 	"version": "2.1.1",
-	"description": "Personal Website for nuro.dev",
-	"repository": "https://github.com/nurodev/nuro.dev.git",
-	"author": "nurodev <me@nuro.dev>",
+	"description": "My corner of the internet.",
+	"repository": "https://github.com/nshmadhani/personal.git",
+	"author": "Nishay <nshmadhani@gmail.com>",
 	"license": "MIT",
 	"prettier": {
 		"arrowParens": "always",
